@@ -7,14 +7,24 @@ function iniciarCalculo() {
     if (pesoUsuario.value === "" && alturaUsuario.value === "") {
         document.getElementById("erroPeso").style.display = "block";
         document.getElementById("erroAltura").style.display = "block";
+    } else if (pesoUsuario.value !== "" && alturaUsuario.value === "") {
+        document.getElementById("erroPeso").style.display = "none";
+        document.getElementById("erroAltura").style.display = "block";
+    } else if (pesoUsuario.value === "" && alturaUsuario.value !== "") {
+        document.getElementById("erroPeso").style.display = "block";
+        document.getElementById("erroAltura").style.display = "none";
     } else if (alturaUsuario === "") {
         document.getElementById("erroAltura").style.display = "none";
     } else if (pesoUsuario.value === "") {
         document.getElementById("erroPeso").style.display = "none";
     } else if (pesoUsuario.value !== "" && pesoUsuario.value !== "") {
+        document.getElementById("erroPeso").style.display = "none";
+        document.getElementById("erroAltura").style.display = "none";
         exibirResultado()
     }
 }
+
+
 
 function exibirResultado() {
 
@@ -46,11 +56,8 @@ function exibirResultado() {
 
 
 const btnLimpar = document.getElementById('btnLimpar')
-btnLimpar.addEventListener('click', function limpar () {
-    pesoUsuario.value = ""
-    alturaUsuario.value = ""
-    exibir.innerHTML = ""
-    exibirNumero.innerHTML = ""
+btnLimpar.addEventListener('click', function limpar() {
+    location.reload()
 })
 
 
