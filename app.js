@@ -5,21 +5,21 @@ const exibirNumero = document.getElementById('numerosImc')
 
 function iniciarCalculo() {
     if (pesoUsuario.value === "" && alturaUsuario.value === "") {
-        document.getElementById("erroPeso").style.display = "block";
-        document.getElementById("erroAltura").style.display = "block";
+        document.getElementById("erroPeso").style.color = "red";
+        document.getElementById("erroAltura").style.color = "red";
     } else if (pesoUsuario.value !== "" && alturaUsuario.value === "") {
-        document.getElementById("erroPeso").style.display = "none";
-        document.getElementById("erroAltura").style.display = "block";
+        document.getElementById("erroPeso").style.color = "rgb(121, 119, 119)";
+        document.getElementById("erroAltura").style.color = "red";
     } else if (pesoUsuario.value === "" && alturaUsuario.value !== "") {
-        document.getElementById("erroPeso").style.display = "block";
-        document.getElementById("erroAltura").style.display = "none";
+        document.getElementById("erroPeso").style.color = "red";
+        document.getElementById("erroAltura").style.color = "rgb(121, 119, 119)";
     } else if (alturaUsuario === "") {
-        document.getElementById("erroAltura").style.display = "none";
+        document.getElementById("erroAltura").style.color = " rgb(121, 119, 119)";
     } else if (pesoUsuario.value === "") {
-        document.getElementById("erroPeso").style.display = "none";
+        document.getElementById("erroPeso").style.color = "rgb(121, 119, 119)";
     } else if (pesoUsuario.value !== "" && pesoUsuario.value !== "") {
-        document.getElementById("erroPeso").style.display = "none";
-        document.getElementById("erroAltura").style.display = "none";
+        document.getElementById("erroPeso").style.color = "rgb(121, 119, 119)";
+        document.getElementById("erroAltura").style.color = "rgb(121, 119, 119)";
         exibirResultado()
     }
 }

@@ -70,8 +70,7 @@ body {
 
 #erroPeso,
 #erroAltura {
-    display: none;
-    color: red;
+    color: rgb(121, 119, 119);
     margin-bottom: 10px;
 }
 
@@ -134,10 +133,8 @@ body {
 
     #erroPeso,
     #erroAltura {
-        display: none;
-        color: red;
         margin-bottom: 10px;
-        font-size: 15px;
+        font-size: 14px;
     }
 
     #btnLimpar {
