@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="/estilo.css">
+    <title>Calculadora de IMC</title>
+</head>
+<body>
+    <div class="pagina-principal">
+        <div class="areaFormulario"></div>
+        <form class="conteudo-site">
+            <h1 class="textosite">Calcule o seu peso agora</h1>
+            <input id="inputAltura" type="text" placeholder="Altura">
+            <div id="erroAltura">Digite um valor valido: ex(1,70cm)</div>
+            <input id="inputPeso"  type="text" placeholder="Peso">
+            <div id="erroPeso">Digite um valor valido: ex(70kg)</div>
+            <button id="btn-calcular" onclick="iniciarCalculo()">Calcular</button>
+            <div id="resultado"></div>
+        </form>
+    </div>
+
+    <script src="/app.js"></script>
+</body>
+</html>
