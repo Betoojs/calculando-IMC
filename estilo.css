@@ -78,3 +78,31 @@ body {
     color: red;
     margin-bottom: 10px;
 }
+
+#resultado{
+    color: rgb(89, 148, 128);
+    font-size: 20px;
+    display: flex;
+    text-align: center;
+}
+
+#numerosImc{
+    font-size: 25px;
+    color: rgb(89, 148, 128);
+}
+
+#btnLimpar{
+    margin-top: 20px;
+    width: 90px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 20%;
+    color: rgb(89, 148, 128);
+}
+
+#btnLimpar:hover{
+    background-color: rgba(59, 59, 59, 0.952);
+
+}
