@@ -30,12 +30,13 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.textosite{
+.textosite {
     color: aquamarine;
     font-size: 30px;
 }
 
-#inputAltura , #inputPeso{
+#inputAltura,
+#inputPeso {
     width: 230px;
     height: 40px;
     display: flex;
@@ -48,7 +49,7 @@ body {
 }
 
 
-#btn-calcular{
+#btn-calcular {
     width: 250px;
     height: 45px;
     font-size: 20px;
@@ -62,37 +63,33 @@ body {
 }
 
 
-#btn-calcular:hover{
+#btn-calcular:hover {
     background-color: rgb(49, 49, 49);
 }
 
 
-#erroPeso{
-    display: none;
-    color: red;
-    margin-bottom: 10px;  
-}
-
-
-#erroAltura{
+#erroPeso,
+#erroAltura {
     display: none;
     color: red;
     margin-bottom: 10px;
 }
 
-#resultado{
+
+
+#resultado {
     color: rgb(89, 148, 128);
     font-size: 20px;
     display: flex;
     text-align: center;
 }
 
-#numerosImc{
+#numerosImc {
     font-size: 25px;
     color: rgb(89, 148, 128);
 }
 
-#btnLimpar{
+#btnLimpar {
     cursor: pointer;
     margin-top: 20px;
     width: 90px;
@@ -100,11 +97,62 @@ body {
     font-size: 20px;
     font-weight: bold;
     border: none;
-    border-radius: 20%;
+    border-radius: 10%;
     color: rgb(89, 148, 128);
 }
 
-#btnLimpar:hover{
+#btnLimpar:hover {
     background-color: rgba(59, 59, 59, 0.952);
+
+}
+
+
+
+@media (max-width: 400px) {
+    .conteudo-site {
+        width: 280px;
+        height: 400px;
+    }
+
+    #inputAltura,
+    #inputPeso {
+        width: 150px;
+        height: 25px;
+        font-size: 16px;
+    }
+
+    #btn-calcular {
+        width: 170px;
+        height: 35px;
+        font-size: 19px;
+    }
+
+    .textosite {
+        color: aquamarine;
+        font-size: 20px;
+    }
+
+    #erroPeso,
+    #erroAltura {
+        display: none;
+        color: red;
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+
+    #btnLimpar {
+        margin-top: 12px;
+        width: 80px;
+        height: 35px;
+        font-size: 18px;
+    }
+
+    #resultado {
+        font-size: 15px;
+    }
+
+    #numerosImc {
+        font-size: 22px;
+    }
 
 }
