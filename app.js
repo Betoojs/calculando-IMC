@@ -57,14 +57,24 @@ function exibirResultado() {
 
 const btnLimpar = document.getElementById('btnLimpar')
 btnLimpar.addEventListener('click', function limpar() {
-    location.reload()
+    inputAltura.innerHTML = alturaUsuario.value = ""
+    inputPeso.innerHTML = pesoUsuario.value = ""
 })
 
 
 
 
+pesoUsuario.addEventListener('blur', function(){
+    console.log("entrei no bluer de peso")
+    inputPeso.innerHTML = pesoUsuario.value = `${pesoUsuario.value} kg`
+    
+})
 
+alturaUsuario.addEventListener('blur', function(){
+    console.log("entrei no bluer de altura")
+    inputAltura.innerHTML = alturaUsuario.value = `${alturaUsuario.value} cm`
 
+})
 
 
 
